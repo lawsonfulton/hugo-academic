@@ -38,7 +38,14 @@
     <div class="article-style" itemprop="articleBody">
       {{ . | truncate 135 }}
     </div>
+    
     {{ end }}
+
+    {{ if $item.Params.medal_image}}
+    <a href={{ $item.Params.medal_image_link }}>
+      <img src={{ $item.Params.medal_image }} style="max-width: 90px; margin-bottom: -10px;">
+    </a>
+    {{end}}
 
     <div class="stream-meta article-metadata">
 
@@ -70,11 +77,13 @@
       {{ end }}
     </div>
 
+
     {{ if $show_buttons }}
     <div class="btn-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
+
 
   </div>
   <div class="ml-3">
