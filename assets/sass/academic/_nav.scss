@@ -36,7 +36,7 @@ nav#navbar-main li.nav-item {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   color: $sta-menu-text;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link:focus {
@@ -112,7 +112,7 @@ nav#navbar-main li.nav-item {
 }
 
 .navbar-light .navbar-brand {
-  font-weight: bold;
+  //font-weight: bold;
   font-size: 1.2em;
   color: $sta-menu-title;
 }
